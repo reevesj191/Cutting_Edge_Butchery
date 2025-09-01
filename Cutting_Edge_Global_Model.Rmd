@@ -1,7 +1,7 @@
 ---
 title: "SOM Modern stone tool users provide insight into selection criteria of cutting tools"
 subtitle: "Global Model"
-author: "REDACTED"
+author: "Jonathan S. Reeves"
 date: "`r Sys.Date()`"
 output: tint::tintPdf
 bibliography: skeleton.bib
@@ -88,17 +88,3 @@ saveRDS(ceM1, file = "CE_Global_Model.RDS")
 ```
 
 
-```{r eval=FALSE}
-file.edit(
-  tint:::template_resources(
-    'tint', '..', 'skeleton', 'skeleton.Rmd'
-  )
-)
-
-rethinking::
-```
-
-```{r bib, include=FALSE}
-# create a bib file for the R packages used in this document
-knitr::write_bib(c('base', 'rmarkdown'), file = 'skeleton.bib')
-```

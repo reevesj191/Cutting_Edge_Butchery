@@ -1,7 +1,7 @@
 ---
 title: "SOM Modern stone tool users provide insight into selection criteria of cutting tools"
 subtitle:"Figures"
-author: "REDACTED"
+author: "Jonathan S. Reeves"
 date: "`r Sys.Date()`"
 output: tint::tintPdf
 bibliography: skeleton.bib
