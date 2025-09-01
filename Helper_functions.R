@@ -1,7 +1,7 @@
 ################################################################################
 # Title: Analysis and Visualization Functions associated with the paper entitled:
 # Modern stone tool users provide insight into selection criteria of cutting tools
-# Author: REDACTED
+# Author: Jonathan S. Reeves
 # Last Update: 26.4.2024
 ################################################################################
 require(rethinking)
