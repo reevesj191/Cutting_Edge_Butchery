@@ -1,0 +1,309 @@
+Isaac_Type,Type,Mass,Max_Thick,Per_Cortex,Raw_Material,Participant,Context,mean_angle,cutting_edge
+Detached,Broken Flake,0.48,2,0,Basalt,1,1,2,1
+Detached,Complete Flake,0.85,12,0.95,Basalt,1,1,1.333333333,3
+Detached,Complete Flake,1.14,3,0.05,Basalt,1,1,2,1
+Detached,Complete Flake,1.57,4,1,Basalt,1,1,3,1
+Detached,Broken Flake,2,7,0.25,Basalt,1,1,4.5,2
+Detached,Broken Flake,1.56,3,0.75,Basalt,1,2,2.25,2
+Detached,Complete Flake,5.27,5,0,Basalt,1,1,4.166666667,6
+Detached,Broken Flake,3.51,7,0.25,Basalt,1,1,6,2
+Detached,Broken Flake,2.8,5,0.25,Basalt,1,1,2,1
+Detached,Angular Fragment,6.19,13,0.75,Basalt,1,2,7,2
+Detached,Broken Flake,3.5,6,0.5,Basalt,1,1,3.75,4
+Detached,Broken Flake,10.42,13,0.75,NA,1,2,13,2
+Detached,Complete Flake,11.59,12,0.25,Basalt,1,1,8.4,5
+Detached,Complete Flake,1.36,3,0,Basalt,1,1,2,1
+Detached,Complete Flake,6.25,6,0.75,Basalt,1,1,3.3,5
+Detached,Complete Flake,1.66,4,0.75,Basalt,1,2,2,3
+Detached,Broken Flake,6.9,8,0.75,Basalt,1,2,4.5,2
+Detached,Broken Flake,2.08,6,0.25,Basalt,1,1,2.5,2
+Detached,Broken Flake,4.31,5,0.95,Basalt,1,1,4.5,2
+Detached,Broken Flake,10.6,11,1,Basalt,1,1,9,4
+Detached,Complete Flake,3.49,4,0.25,Basalt,1,2,2.166666667,3
+Detached,Broken Flake,12.18,17,0.5,Basalt,1,1,7.25,4
+Detached,Complete Flake,16.78,12,0.5,Basalt,1,1,7.333333333,3
+Detached,Complete Flake,7.84,8,1,Basalt,1,1,3.666666667,3
+Detached,Broken Flake,13.44,10,0.25,Basalt,1,2,6,2
+Detached,Complete Flake,20.86,10.5,0.25,Basalt,1,3,4.875,4
+Detached,Angular Fragment,68.45,36,0.75,Basalt,1,2,9,2
+Detached,Complete Flake,11.16,8,0.75,Basalt,1,2,4.5,4
+Detached,Complete Flake,22.6,11,0.75,Basalt,1,4,6,4
+Detached,Complete Flake,45.72,15,0.75,Basalt,1,3,8.0625,8
+Detached,Complete Flake,35.65,15,0.25,Basalt,1,3,4.25,2
+Detached,Angular Fragment,84.79,27,0.75,NA,1,2,6.25,4
+Detached,Complete Flake,30.5,7,0.75,Basalt,1,3,7.75,4
+Detached,Complete Flake,46.24,17,0.25,Basalt,1,3,8.833333333,6
+Detached,Complete Flake,93.22,30,0.5,Basalt,1,3,7.777777778,9
+Flaked,Core,296.37,45,0.5,Basalt,1,3,15.4,5
+Detached,Complete Flake,27.47,10,0.25,Basalt,1,3,6.714285714,7
+Detached,Complete Flake,98.6,15.5,1,Basalt,1,4,5.272727273,11
+Flaked,Core,757.8,50,0.75,Basalt,1,3,9.125,4
+Detached,Core,24.27,17,0.25,Fossil Wood,2,1,12.8,5
+Detached,Broken Flake,0.7,5,0,Chert,2,1,4,1
+Detached,Angular Fragment,1.41,8,0.75,Chalcedony,2,1,6.5,2
+Detached,Complete Flake,1.14,6,0,Chalcedony,2,1,4,1
+Detached,Complete Flake,2.32,4,1,Fossil Wood,2,1,0.25,1
+Detached,Complete Flake,1.4,3,0.75,Chert,2,1,2,1
+Detached,Broken Flake,0.58,2.5,0.95,Chalcedony,2,1,1.75,2
+Detached,Angular Fragment,1.67,6,0.25,Chalcedony,2,1,6,1
+Detached,Complete Flake,1.4,7,0,Chert,2,1,3,1
+Detached,Broken Flake,1.5,6,1,Chert,2,1,3,3
+Detached,Complete Flake,0.4,2,0,CHERT,2,1,0.875,2
+Detached,Angular Fragment,2.5,8,1,NA,2,1,7.5,2
+Detached,Angular Fragment,4.1,11,0,Chalcedony,2,1,7.9,5
+Detached,Angular Fragment,5.1,10,0.5,Chalcedony,2,2,8.25,4
+Detached,Broken Flake,1.8,10.5,0.25,Chert,2,1,7,2
+Detached,Broken Flake,1.8,8,0.75,Chert,2,1,5,1
+Detached,Complete Flake,1.25,7,0.95,Chalcedony,2,1,5,1
+Detached,Broken Flake,0.7,1,0,Chalcedony,2,1,1.5,2
+Detached,Complete Flake,0.86,3,0,Chalcedony,2,2,2,1
+Detached,Broken Flake,1.7,5,0,Chert,2,1,4,1
+Detached,Broken Flake,1.6,4,0.25,Chalcedony,2,1,3.333333333,3
+Detached,Broken Flake,2.6,7,0,Chalcedony,2,2,3,1
+Detached,Broken Flake,2.17,9,0.75,Chalcedony,2,1,6,1
+Detached,Angular Fragment,2,6,0,Chalcedony,2,1,3,4
+Detached,Angular Fragment,2.42,7,1,Chalcedony,2,2,5.5,2
+Detached,Broken Flake,3,7,0.25,Chert,2,1,3.666666667,3
+Detached,Broken Flake,1.79,4,0,Chalcedony,2,1,2.5,2
+Detached,Angular Fragment,2.89,5,0,Chalcedony,2,1,4,3
+Detached,Broken Flake,6.4,8,0.25,Chalcedony,2,1,6,5
+Detached,Broken Flake,8,12,1,Chalcedony,2,1,7.5,6
+Detached,Complete Flake,14.1,11,1,Fossil Wood,2,2,7.7,5
+Detached,Angular Fragment,4.24,8,0.75,Chalcedony,2,1,6.5,4
+Detached,Angular Fragment,1.92,8,1,Fossil Wood,2,1,4.166666667,3
+Detached,Broken Flake,0.87,2.5,0,Chalcedony,2,1,1.75,2
+Detached,Broken Flake,2.23,5,0,Chalcedony,2,1,4,1
+Detached,Broken Flake,6.4,13,0,Chalcedony,2,2,5.5,3
+Detached,Broken Flake,2.31,6,0.75,Chalcedony,2,1,4.333333333,3
+Detached,Angular Fragment,3.94,11,0.25,Chalcedony,2,1,5,1
+Detached,Broken Flake,1.2,3,0,Chalcedony,2,2,2.166666667,3
+Detached,Broken Flake,3.5,11,0.25,Chert,2,1,6.5,2
+Detached,Broken Flake,9.5,8,0,Chalcedony,2,2,5.5,2
+Detached,Broken Flake,5.44,8,0,Chalcedony,2,3,5,3
+Detached,Broken Flake,4.85,7,0.75,Chalcedony,2,1,3.5,3
+Detached,Broken Flake,2.19,4,1,Chalcedony,2,1,3,2
+Detached,Complete Flake,8.18,10,0,Fossil Wood,2,1,4.321428571,7
+Detached,Angular Fragment,7.52,16,0.25,Chalcedony,2,1,6.75,2
+Detached,Complete Flake,5.9,7,0,Chert,2,1,5,1
+Detached,Angular Fragment,7.71,14,0.25,Chalcedony,2,1,8,4
+Detached,Broken Flake,5.08,5,0.75,Fossil Wood,2,1,2.25,8
+Detached,Broken Flake,3.2,7,0,Chalcedony,2,2,3.333333333,3
+Detached,Complete Flake,3.64,70,0.5,Chalcedony,2,3,3.333333333,3
+Detached,Broken Flake,4.59,7,1,Chalcedony,2,1,3.625,4
+Detached,Broken Flake,6.9,8,0.75,Chalcedony,2,2,7,1
+Detached,Angular Fragment,8.59,13,0,Chalcedony,2,3,7.125,4
+Detached,Angular Fragment,14,20,0.25,Chalcedony,2,1,8.5,2
+Detached,Angular Fragment,19.1,20,0.5,Chalcedony,2,2,7.5,2
+Detached,Broken Flake,6.7,9,0,Chert,2,1,7.166666667,3
+Detached,Core,16.6,20,0.5,Chert,2,1,11.33333333,3
+Detached,Complete Flake,8.47,11,0.75,Chalcedony,2,2,5.375,4
+Flaked,Broken Flake,5.63,7,0,Chalcedony,2,3,5.5,5
+Detached,Complete Flake,3.19,5,0.05,Chalcedony,2,3,2.125,4
+Detached,Angular Fragment,26.9,23,0.75,Chert,2,1,16.16666667,6
+Detached,Angular Fragment,17.58,17,0.25,Chalcedony,2,3,8.357142857,7
+Detached,Broken Flake,9.27,9,0.25,Chalcedony,2,3,4.833333333,3
+Detached,Angular Fragment,15,16,0.25,Chert,2,1,8.666666667,3
+Detached,Complete Flake,15.7,12,0.25,Chalcedony,2,1,6,4
+Detached,Complete Flake,10.3,6,0.25,Chert,2,2,5,4
+Detached,Complete Flake,9.2,7,0.25,Chert,2,1,4.75,4
+Detached,Complete Flake,4.48,5,0,Fossil Wood,2,1,3.5,2
+Detached,Complete Flake,7.85,8,0.95,Chalcedony,2,3,5,5
+Detached,Broken Flake,20.5,18,0.25,Chert,2,1,11,2
+Detached,Angular Fragment,16.65,20,0,Chalcedony,2,1,6.666666667,3
+Detached,Broken Flake,27,29,0.25,Chert,2,1,9.333333333,3
+Detached,Broken Flake,23.8,14,1,Chert,2,1,4.5,4
+Flaked,Core Fragment,18.96,16.5,0.5,Fossil Wood,2,1,8.75,2
+Detached,Complete Flake,6.5,7,0.25,Chalcedony,2,3,4,5
+Detached,Complete Flake,24.8,16,0.95,Chert,2,2,8.5,4
+Detached,Angular Fragment,41.59,22,0.25,Chalcedony,2,4,11.25,4
+Detached,Complete Flake,16.3,13,0.25,Chalcedony,2,3,4,7
+Flaked,Core,46.44,24,0.25,Chalcedony,2,2,13.8,5
+Detached,Angular Fragment,42.2,29,1,Fossil Wood,2,1,12.5,6
+Detached,Angular Fragment,50.3,27,0.5,Chalcedony,2,3,8,7
+Detached,Complete Flake,45.1,20,0.75,NA,2,1,7.4375,8
+Detached,Complete Flake,35.9,19,1,Chert,2,3,5.25,4
+Flaked,Core Fragment,121.8,27,0.5,Chalcedony,2,3,10,7
+Detached,Complete Flake,85.8,26,0.75,Chert,2,2,11.5,8
+Detached,Broken Flake,33.27,10,0.05,Chert,2,3,4.958333333,12
+Detached,Complete Flake,51.28,19,0.25,Chalcedony,2,3,5.5,4
+Detached,Angular Fragment,93.9,44,0.5,Chalcedony,2,2,10,1
+Detached,Complete Flake,29.67,15,0.05,Chalcedony,2,4,3.75,4
+Detached,Broken Flake,55.22,22,0.25,Fossil Wood,2,3,9.2,5
+Flaked,Core,147.39,44,0.25,Fossil Wood,2,1,16.85714286,7
+Flaked,Core,145.75,40,0.25,Chalcedony,2,3,12.77777778,9
+Detached,Core,98,30,0.75,Chert,2,1,13.6,5
+Detached,Complete Flake,70.44,25.5,0.75,Fossil Wood,2,3,8.545454545,11
+Detached,Angular Fragment,79.39,23,0.25,Chalcedony,2,4,5.5,4
+Detached,Angular Fragment,138.76,32,0.95,Chalcedony,2,3,14.125,8
+Detached,Angular Fragment,125.8,47,0.5,Chert,2,1,11.58333333,6
+Detached,Complete Flake,95.43,17,0.25,Chert,2,3,5,3
+Flaked,Core Fragment,108.4,22,0.5,Chert,2,2,8.166666667,3
+Detached,Complete Flake,83.6,25,0.75,Chert,2,1,7.833333333,6
+Flaked,Core,191.56,34,0.25,Chalcedony,2,3,12.4,5
+Detached,Core,211.3,44,0.75,Chert,2,2,8.75,4
+Detached,Angular Fragment,1.82,8,0.75,Chalcedony,3,1,8,1
+Detached,Complete Flake,2.68,10,0.25,Chalcedony,3,1,5,2
+Detached,Broken Flake,0.92,4,0,Chalcedony,3,1,3,3
+Detached,Complete Flake,0.72,3,0,Chalcedony,3,1,1.625,4
+Detached,Broken Flake,6.29,8,0.25,Chert,3,2,6,2
+Detached,Broken Flake,4.72,6,0.25,Chalcedony,3,2,6.333333333,3
+Detached,Broken Flake,1.9,2,0.5,Chalcedony,3,1,2.5,2
+Detached,Broken Flake,1.31,4,0.25,Chalcedony,3,1,2.5,1
+Detached,Complete Flake,1.87,5,0.75,Chalcedony,3,2,2,1
+Detached,Complete Flake,0.84,2,0.25,Chalcedony,3,2,1.25,2
+Detached,Broken Flake,5,7,0,Chalcedony,3,1,2.5,2
+Detached,Complete Flake,5.9,7,0,Basalt,3,1,4,1
+Detached,Broken Flake,1.57,6,0,Chalcedony,3,1,2.5,2
+Detached,Complete Flake,8.6,4,0.25,Chert,3,4,5,5
+Detached,Broken Flake,2.39,3,1,Chert,3,2,2,3
+Detached,Broken Flake,16.17,15.5,1,Chert,3,2,3,1
+Detached,Broken Flake,5.74,6,0,Chalcedony,3,2,2.5,3
+Detached,Complete Flake,9.9,10,0.25,Chert,3,2,4,1
+Detached,Complete Flake,4.49,5,0,Chalcedony,3,2,3.75,4
+Detached,Angular Fragment,35.7,21,0.25,Chalcedony,3,4,7.5,4
+Detached,Complete Flake,12.22,7,0.25,Chalcedony,3,2,3.5,4
+Detached,Complete Flake,44.6,16,0.75,Basalt,3,3,4.5,5
+Detached,Broken Flake,33.45,16,0.75,Chert,3,2,6.75,2
+Detached,Complete Flake,11.04,10,0.25,Chert,3,2,7.166666667,3
+Detached,Broken Flake,33.23,23,1,Chalcedony,3,2,6,3
+Detached,Complete Flake,52.08,18,0.75,Chalcedony,3,2,4.5,2
+Detached,Complete Flake,51.1,15,1,Chert,3,3,6.25,4
+Detached,Complete Flake,21.9,9,0.25,Chalcedony,3,4,3.25,4
+Detached,Complete Flake,29.5,9,0.05,Chalcedony,3,4,4.4,5
+Detached,Complete Flake,81.5,15,0.75,Chert,3,4,7,5
+Flaked,Core,857.7,57,0.75,Chalcedony,3,1,10,7
+Detached,Angular Fragment,0.78,5,0.25,Chalcedony,4,2,5,1
+Detached,Broken Flake,2.35,4,0,Chalcedony,4,1,1,1
+Detached,Broken Flake,0.59,13,0,Chalcedony,4,1,2,1
+Detached,Complete Flake,1.55,7,0,Chalcedony,4,1,3.166666667,3
+Detached,Broken Flake,1.53,7,0.25,Chalcedony,4,3,3,2
+Detached,Angular Fragment,4.54,10,0.25,Chalcedony,4,1,8,3
+Detached,Angular Fragment,2.63,8,1,Chalcedony,4,1,5,1
+Detached,Broken Flake,2.89,8,0,Chalcedony,4,1,4,2
+Detached,Complete Flake,10.6,14,1,Chalcedony,4,1,7.916666667,6
+Detached,Angular Fragment,3.46,7,0,Chalcedony,4,1,4.666666667,3
+Detached,Angular Fragment,9.73,17,0.25,Chalcedony,4,2,7,2
+Detached,Angular Fragment,9.21,14,0.25,Chalcedony,4,2,9,4
+Detached,Complete Flake,2.3,4,0,Chalcedony,4,1,2.333333333,3
+Detached,Broken Flake,3.23,9,0.25,Fossil Wood,4,1,4,2
+Detached,Angular Fragment,5.41,11,0.75,Chalcedony,4,2,8.5,2
+Detached,Broken Flake,6.62,6,0,Chalcedony,4,3,3,3
+Detached,Complete Flake,2.94,9,0.25,Chalcedony,4,1,5,2
+Detached,Broken Flake,2.65,10.5,0.25,Chalcedony,4,1,5.666666667,3
+Detached,Broken Flake,3.71,10,0.5,Chalcedony,4,1,8,2
+Detached,Broken Flake,2.11,40,0,Chalcedony,4,1,2.75,2
+Detached,Angular Fragment,5.91,12,1,Chalcedony,4,2,9.666666667,3
+Detached,Broken Flake,8.36,10,0,Chalcedony,4,2,5.166666667,3
+Detached,Complete Flake,13.21,17,0.5,Chalcedony,4,1,8.166666667,3
+Detached,Angular Fragment,15.68,15,0.25,Chalcedony,4,1,7,2
+Detached,Angular Fragment,18.75,20,0.75,Chalcedony,4,2,11.66666667,3
+Detached,Broken Flake,7.75,11,0.75,Chalcedony,4,1,2.5,1
+Detached,Broken Flake,5.37,7,0.05,Chalcedony,4,3,2.333333333,3
+Detached,Broken Flake,19.49,16,0.75,Fossil Wood,4,2,9.333333333,3
+Detached,Complete Flake,8.69,10,0.25,Chalcedony,4,1,6.75,4
+Detached,Broken Flake,30.75,18,1,Chalcedony,4,4,9.833333333,3
+Detached,Angular Fragment,17.14,18,0,Chalcedony,4,2,8.333333333,3
+Detached,Broken Flake,50.32,18,0.5,Chalcedony,4,3,8.428571429,7
+Detached,Complete Flake,12.94,14,0.05,Chalcedony,4,2,6,3
+Detached,Complete Flake,29.44,25,0.25,Chalcedony,4,2,5.5,2
+Detached,Broken Flake,25.65,13,0.25,Chalcedony,4,3,4,2
+Detached,Angular Fragment,76.97,27,0.5,Chalcedony,4,3,14.6,5
+Detached,Angular Fragment,33.56,21,1,Chalcedony,4,2,11,7
+Detached,Broken Flake,27.78,15,0.25,Chalcedony,4,2,11.5,4
+Detached,Broken Flake,40.93,24,1,Chalcedony,4,1,13.25,4
+Detached,Angular Fragment,59.96,35,1,Chalcedony,4,1,10.75,4
+Detached,Angular Fragment,53.25,30,0.5,Chalcedony,4,2,9,1
+Detached,Complete Flake,46.75,25,0.75,Fossil Wood,4,2,10.25,4
+Detached,Core,36.95,17,0.75,Chalcedony,4,3,6,2
+Detached,Complete Flake,34.66,13,1,Chalcedony,4,1,8,4
+Detached,Angular Fragment,93.56,31,0.75,Chalcedony,4,2,13.33333333,3
+Flaked,Core,71.35,33,0.75,Chalcedony,4,1,15.66666667,3
+Detached,Complete Flake,100.2,32,0.25,Chalcedony,4,2,16.25,4
+Detached,Broken Flake,111.94,35,0.5,Chalcedony,4,3,10,8
+Detached,Broken Flake,52.16,24,1,Chalcedony,4,3,6.333333333,3
+Detached,Angular Fragment,98.4,40,0.25,Chalcedony,4,2,8.8,5
+Flaked,Core,276.63,54,0.75,Chalcedony,4,2,11.33333333,3
+Detached,Complete Flake,442.5,35,1,Chalcedony,4,4,12.16666667,9
+Detached,Complete Flake,545.1,50,1,Chalcedony,4,3,14.4,5
+Detached,Complete Flake,0.67,3,0.25,Basalt,5,1,2,1
+Detached,Angular Fragment,2.63,4.5,0.75,Basalt,5,1,2.666666667,3
+Detached,Broken Flake,0.72,3,0,Chalcedony,5,1,2,1
+Detached,Complete Flake,1.51,6,0.25,Basalt,5,1,2,2
+Detached,Complete Flake,1.75,4,1,Chert,5,2,3,3
+Detached,Broken Flake,1.87,5,0,Basalt,5,1,3.5,2
+Detached,Angular Fragment,5.03,12,1,Basalt,5,1,5,2
+Detached,Broken Flake,1.55,3,0,Basalt,5,1,2.333333333,3
+Detached,Complete Flake,2.44,4,0.25,Basalt,5,1,3,1
+Detached,Complete Flake,2.73,10,0.25,Chalcedony,5,3,4.5,2
+Detached,Broken Flake,3.76,5,0.25,Chert,5,3,1.5,2
+Detached,Broken Flake,3.53,6,0,Chalcedony,5,3,6,3
+Detached,Complete Flake,6,11,0.5,Chert,5,2,8,3
+Detached,Complete Flake,4.48,5,1,Basalt,5,1,1,1
+Detached,Complete Flake,6.39,6,0,Basalt,5,3,4.6,5
+Detached,Complete Flake,2.37,8,0.25,Basalt,5,1,5,2
+Detached,Broken Flake,8,6,0.5,Basalt,5,3,5.5,2
+Detached,Broken Flake,9.76,7.5,0.75,Basalt,5,3,3,2
+Detached,Complete Flake,9.5,8,0.75,Chert,5,4,5.333333333,3
+Detached,Complete Flake,22.18,11,0.75,Basalt,5,1,3.5,2
+Detached,Complete Flake,9,10,0.25,Chert,5,3,8,2
+Detached,Broken Flake,15.48,10,0.95,Basalt,5,2,4.5,5
+Detached,Complete Flake,38.27,16,1,Basalt,5,1,7.363636364,11
+Detached,Complete Flake,5.88,6,0.25,Basalt,5,3,5.25,4
+Detached,Broken Flake,8.3,7,0.05,Chalcedony,5,4,4,3
+Detached,Complete Flake,7.2,7,0.25,Chalcedony,5,4,4,2
+Detached,Broken Flake,11.7,14,0.25,Chert,5,4,4,3
+Detached,Complete Flake,11.69,15,1,Chert,5,3,10,3
+Detached,Broken Flake,14.8,10,1,Basalt,5,1,2.333333333,3
+Detached,Broken Flake,21.19,12,0.25,Basalt,5,3,12,4
+Detached,Broken Flake,9.86,5,1,Basalt,5,3,1.75,2
+Detached,Broken Flake,34.24,12,0.5,Basalt,5,3,7,5
+Detached,Broken Flake,20.8,11,0.25,Basalt,5,3,9.5,2
+Flaked,Core,44.45,24,0.75,Chert,5,2,8.25,4
+Detached,Broken Flake,17.84,8,0,Basalt,5,3,5.5,5
+Detached,Complete Flake,24.51,12,0.95,Basalt,5,3,3.5,4
+Detached,Complete Flake,32.25,18,1,Chalcedony,5,4,5.5,4
+Detached,Broken Flake,48.78,14,0.25,Basalt,5,3,6,1
+Detached,Broken Flake,35.22,12,0.25,Basalt,5,3,3.25,4
+Detached,Angular Fragment,90.69,15,1,Basalt,5,3,5.888888889,9
+Detached,Complete Flake,83.72,15,0.25,Chert,5,3,6,5
+Detached,Complete Flake,48.8,15,1,Chert,5,4,5.25,4
+Detached,Angular Fragment,149.49,53,1,Chert,5,1,4,1
+Detached,Broken Flake,186.86,33.5,0.75,Basalt,5,2,3,1
+Detached,Complete Flake,409.6,40,0.75,Basalt,5,4,9.166666667,12
+Flaked,Core,333.5,60,0.75,Chert,5,2,13.66666667,6
+Detached,Core,205.66,38,0.75,Chalcedony,5,4,9.75,4
+Detached,Complete Flake,119.52,27,1,Basalt,5,2,9.142857143,7
+Detached,Complete Flake,245.4,35,0.75,Basalt,5,4,5.714285714,7
+Detached,Complete Flake,660.9,62,0.75,Basalt,5,3,10.77777778,9
+Detached,Complete Flake,0.7,5,0,Chalcedony,6,1,2.5,2
+Detached,Complete Flake,3.7,7,0.25,Chalcedony,6,1,5,2
+Detached,Broken Flake,4.6,12,1,Chalcedony,6,1,7,4
+Detached,Complete Flake,6.7,10,0.25,Chalcedony,6,1,4.666666667,3
+Detached,Broken Flake,3.6,6,0.5,Chalcedony,6,1,4,2
+Detached,Angular Fragment,28.6,21,1,Chalcedony,6,1,10.57142857,7
+Detached,Complete Flake,27,20,1,Chalcedony,6,1,8,3
+Detached,Angular Fragment,42.6,27,0.75,Chalcedony,6,1,3.333333333,3
+Detached,Complete Flake,18.6,14,0,Chalcedony,6,4,4.875,4
+Detached,Angular Fragment,40.3,25,0.25,Chalcedony,6,1,10.75,4
+Flaked,Complete Flake,60,17,0.75,Chalcedony,6,4,10.66666667,3
+Flaked,Core,318.9,40,0.75,Chalcedony,6,4,8,5
+Flaked,Core,344.2,47,0.75,Chalcedony,6,4,13.66666667,3
+Detached,Broken Flake,5.1,11,1,Quartz,7,1,5.5,2
+Detached,Complete Flake,10.3,9,1,Quartz,7,1,6.5,2
+Detached,Broken Flake,7.9,10.5,1,Quartz,7,1,5.25,2
+Detached,Complete Flake,19.1,8,0.25,Quartz,7,4,3.7,5
+Flaked,Core Fragment,61,25,0.75,Quartz,7,1,6.75,2
+Detached,Broken Flake,500,58,0.7,Quartz,7,1,13.33333333,3
+Detached,Complete Flake,2.27,2,0.75,Basalt,8,2,1.75,2
+Detached,Broken Flake,3.16,5,0.95,Quartzite,8,3,4.25,2
+Detached,Broken Flake,2.94,4.5,0.05,Quartzite,8,2,2.75,2
+Detached,Complete Flake,15.3,11,0.75,Quartzite,8,3,3.666666667,3
+Flaked,Broken Flake,11.4,6,0.75,Quartzite,8,3,4,2
+Detached,Angular Fragment,28.38,21,0.25,Basalt,8,2,5.666666667,3
+Detached,Broken Flake,34.4,14,0.25,Quartzite,8,3,9.166666667,6
+Detached,Broken Flake,103,18,0.75,Basalt,8,2,7.571428571,7
+Detached,Broken Flake,74.54,20,0.75,Quartzite,8,2,4.142857143,7
+Detached,Complete Flake,195.17,43,1,Quartzite,8,4,6.2,5
+Detached,Complete Flake,131.23,32,0.25,Quartzite,8,4,5.5,6
+Detached,Complete Flake,260.23,33,0.75,Quartzite,8,4,8.777777778,9
+Flaked,Core,1144.5,64,0.75,Basalt,8,1,8,3

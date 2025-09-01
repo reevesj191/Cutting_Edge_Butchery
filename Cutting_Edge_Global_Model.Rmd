@@ -1,0 +1,104 @@
+---
+title: "SOM Modern stone tool users provide insight into selection criteria of cutting tools"
+subtitle: "Global Model"
+author: "REDACTED"
+date: "`r Sys.Date()`"
+output: tint::tintPdf
+bibliography: skeleton.bib
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+library(tint)
+library(rethinking)
+# invalidate cache when the package version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'))
+options(htmltools.dir.version = FALSE)
+```
+
+# Load Data
+
+```{r}
+xdata <- read.csv("Data/CE_cutting_edges.csv")
+```
+
+# Define and Standardize Variables
+
+These code take care of any transformations, scaling or standardization, that is required by the model and then bundles them into a list.
+
+```{r}
+
+dat <- list(
+  S = xdata$Context, # Selection Stage
+  M = xdata$Mass^(1/3),
+  Th = xdata$Max_Thick, # Maximum thickness
+  EL = xdata$cutting_edge, # Edge length
+  EA = xdata$mean_angle, # Average edge angles
+  C = xdata$Per_Cortex
+)
+
+```
+
+# Model definition
+
+```{r, message=FALSE, warning=FALSE}
+
+ceM1 <- ulam(
+  alist(
+    
+    S ~ dordlogit(phi, cutpoints),
+    phi <- bMEL*(M * EL), #+ bTh*Th + bEA*EA + bC*C,
+    #define effects using other parameters
+
+    c(bMEL,bC, bL, bEL, bEA, bTh) ~ dnorm(0, 1.5), 
+    
+    #priors for the priors
+    
+    cutpoints ~ dnorm(0, 1.5)
+  ), data= dat, chains = 4, cores =4, iter = 2000, cmdstan = TRUE
+  )
+
+```
+
+## Model Diagnostics 
+
+```{r ceM2.Marg}
+
+ceM1.marg <- precis(ceM1, depth = 2)
+```
+
+
+```{r ceM2.Marg.plot, echo = FALSE, fig.margin = TRUE, fig.cap="Marginal distributions for Model ceM1", fig.width=4, fig.height=4}
+
+plot(ceM1.marg)
+
+```
+
+**Trace Plots**
+
+```{r ceM2.Trace plots}
+rethinking::trankplot(ceM1)
+
+```
+
+# Write Model
+
+```{r write model}
+saveRDS(ceM1, file = "CE_Global_Model.RDS")
+```
+
+
+```{r eval=FALSE}
+file.edit(
+  tint:::template_resources(
+    'tint', '..', 'skeleton', 'skeleton.Rmd'
+  )
+)
+
+rethinking::
+```
+
+```{r bib, include=FALSE}
+# create a bib file for the R packages used in this document
+knitr::write_bib(c('base', 'rmarkdown'), file = 'skeleton.bib')
+```

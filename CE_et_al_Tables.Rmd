@@ -1,0 +1,63 @@
+---
+title: "SOM: Modern stone tool users provide insight into selection criteria of cutting tools"
+subtitle: "Tables"
+author: "REDACTED"
+date: "`r Sys.Date()`"
+output: tint::tintPdf
+bibliography: skeleton.bib
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+library(tint)
+library(dplyr)
+# invalidate cache when the package version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'))
+options(htmltools.dir.version = FALSE)
+```
+
+```{r}
+
+lithics <- read.csv("Data/CE_Lithics_all.csv")
+lithics$Participant <- as.numeric(as.factor(lithics$Participant))
+
+```
+
+```{r SOM table 1}
+
+particip_rm <- lithics %>% 
+  group_by(Participant, Raw_Material) %>%
+  summarise(N = n())
+
+#write.csv(particip_rm, "Tables/SOM_T1_RM_Particip.csv")
+
+```
+
+```{r}
+
+particip_break_down <- lithics %>% 
+  group_by(Participant, Context) %>%
+  summarise(N = n())
+
+#write.csv(particip_break_down, "../Tables/SOM_T2_Selection_Particip.csv")
+
+```
+
+
+```{r}
+stage_break_down <- lithics %>% group_by(Context) %>%
+  summarise(med = median(Mass, na.rm = TRUE))
+```
+
+```{r eval=FALSE}
+file.edit(
+  tint:::template_resources(
+    'tint', '..', 'skeleton', 'skeleton.Rmd'
+  )
+)
+```
+
+```{r bib, include=FALSE}
+# create a bib file for the R packages used in this document
+knitr::write_bib(c('base', 'rmarkdown'), file = 'skeleton.bib')
+```
