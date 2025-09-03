@@ -49,8 +49,8 @@ ceM2 <- ulam(
     S ~ dordlogit(phi, cutpoints),
     phi <-   a[P] + bMEL*(M*EL) + bTh*Th + bEA*EA + bC*C,
     
-    save> vector[8]:a <<-abar + za*sigma,
-    vector[8]:za ~ normal(0,1),
+    #save> vector[8]:a <<-abar + za*sigma,
+    #vector[8]:za ~ normal(0,1),
     
     #priors
     c(bMEL,bTh,bEA,bTh,bC) ~ dnorm(0, 1.5),
@@ -93,21 +93,9 @@ rethinking::traceplot(ceM2)
 # Write Model
 
 ```{r write model}
-saveRDS(ceM2, file = "Data/CE_Participant_Model.RDS")
+saveRDS(ceM2, file = "Models/CE_Participant_Model.RDS")
 ```
 
 
 
 
-```{r eval=FALSE}
-file.edit(
-  tint:::template_resources(
-    'tint', '..', 'skeleton', 'skeleton.Rmd'
-  )
-)
-```
-
-```{r bib, include=FALSE}
-# create a bib file for the R packages used in this document
-knitr::write_bib(c('base', 'rmarkdown'), file = 'skeleton.bib')
-```

@@ -47,7 +47,7 @@ ceM1 <- ulam(
   alist(
     
     S ~ dordlogit(phi, cutpoints),
-    phi <- bMEL*(M * EL), #+ bTh*Th + bEA*EA + bC*C,
+    phi <- bMEL*(M * EL) + bTh*Th + bEA*EA + bC*C,
     #define effects using other parameters
 
     c(bMEL,bC, bL, bEL, bEA, bTh) ~ dnorm(0, 1.5), 
@@ -77,6 +77,7 @@ plot(ceM1.marg)
 **Trace Plots**
 
 ```{r ceM2.Trace plots}
+
 rethinking::trankplot(ceM1)
 
 ```
@@ -84,7 +85,7 @@ rethinking::trankplot(ceM1)
 # Write Model
 
 ```{r write model}
-saveRDS(ceM1, file = "CE_Global_Model.RDS")
+saveRDS(ceM1, file = "CE_Global_Model_2.RDS")
 ```
 
 
