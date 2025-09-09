@@ -30,11 +30,13 @@ global_model <- readRDS("Models/CE_Global_Model.RDS")
 
 ## Figure 2
 
-```{r fig2, fig.cap="Cumulative frequencies of archaeological types according to selection stage. (1) Produced but not considered. (2) Set aside for further consideration. (3) Selected for use during the butchery task. (4) Used during butchery tasks. \\label{CE_f2}"}
+## Figure 3
+
+```{r fig3, fig.cap="Cumulative frequencies of archaeological types according to selection stage. (1) Produced but not considered. (2) Set aside for further consideration. (3) Selected for use during the butchery task. (4) Used during butchery tasks. \\label{CE_f2}"}
 
 cols <- c("#F21A00","#78B7C5","#3B9AB2", "#EBCC2A", "#E1AF00")
 
-f2 <- ggplot(lithics, aes(x = Context, group = Type, fill = Type)) + 
+f3 <- ggplot(lithics, aes(x = Context, group = Type, fill = Type)) + 
   geom_bar(position = "fill") +
   guides(fill = guide_legend(ncol = 2))+
   scale_fill_manual(values = cols)+
@@ -43,13 +45,13 @@ f2 <- ggplot(lithics, aes(x = Context, group = Type, fill = Type)) +
   theme_bw()+
   theme(legend.position = "top",)
 
-f2
+f3
 
-#ggsave("../Figures/CE_fig_2.pdf", plot = f2, width = 7, height = 7, units = "in")
+ggsave("Figures/CE_fig_3.png", plot = f3, width = 7, height = 7, units = "in")
 
 ```
 
-## Figure 3
+## Figure 4
 
 ```{r fig3, fig.cap= "Rainfall plots showing the distribution of cutting edge length (left) and mass (right) mass values for each stage of selection. In both cases, there is selection against the lithics with the shortest cutting edge and least mass at each selection stage. \\label{CE_f3}"}
 
@@ -64,7 +66,7 @@ a <- ggplot(xdata, aes(x = as.factor(Context), y = Mass^(1/3))
             ) +
   ggdist::stat_halfeye(
     aes(color = as.factor(Context),
-        fill = after_scale(lighten(color, .2))),
+        fill = after_scale(lighten(color, .2))), ,
         adjust = .5, 
         width = .75, 
         justification = -.4, 
@@ -135,15 +137,15 @@ b <- ggplot(xdata, aes(x = as.factor(Context), y = cutting_edge)
   theme(legend.position = "none")
 b 
 
-f3 <- ggpubr::ggarrange(b,a)
+f4 <- ggpubr::ggarrange(b,a)
 
-ggsave("Figures/CE_fig_3.pdf", plot = f3, width = 7, height = 4, units = "in")
+ggsave("Figures/CE_fig_4.pdf", plot = f4, width = 7, height = 4, units = "in")
 
-f3
+f4
 ```
 
 
-## Figure 4
+## Figure 5
 
 ```{r fig Cutting Edge Length, echo = FALSE, fig.width=13}
 
@@ -160,7 +162,7 @@ kEA <- mean(xdata$mean_angle)
 kTh <- mean(xdata$Max_Thick)
 kC <- .5
 
-var_quant <- c(5, 40, 300)^(1/3)
+var_quant <- c(5, 34, 125 )^(1/3)
 
 cols <- c( "Stage 1"= "#B40F20",
                        "Stage 2" = "#DD8D29",
@@ -196,20 +198,19 @@ p <- ggPostPredPlot_pordlogit(model = global_model,
 }
 
 
-f4 <- ggarrange(plotlist = plots[],ncol = 3, 
+f5 <- ggarrange(plotlist = plots[],ncol = 3, 
                 label.x = "Cumulative Proportion",
                 label.y = "Cutting Edge Length (cm)",common.legend = TRUE, legend = "bottom")
 
 
-f4
-
-#ggsave("Figures/CE_fig_4.pdf", plot = f4, width = 10, height = 4, units = "in")
+f5 
+ggsave("Figures/CE_fig_5.png", plot = f5, width = 10, height = 4, units = "in")
 
 
 ```
 
 
-**Figure 5**
+**Figure 6**
 
 ```{r fig  Cortex, echo = FALSE}
 nsamples <- 2000
@@ -326,11 +327,11 @@ edge_plot
 
 ```{r fig 5}
 
-f5 <- ggarrange(c_plot, thick_plot, edge_plot,ncol = 3, common.legend = TRUE, legend = "bottom")
+f6 <- ggarrange(c_plot, thick_plot, edge_plot,ncol = 3, common.legend = TRUE, legend = "bottom")
 
-#ggsave("Figures/CE_fig_5.pdf", plot = f5, width = 10, height = 4, units = "in")
+ggsave("Figures/CE_fig_6.png", plot = f6, width = 10, height = 4, units = "in")
 
-f5
+f6
 ```
 
 # Supplementary

@@ -21,33 +21,46 @@ options(htmltools.dir.version = FALSE)
 lithics <- read.csv("Data/CE_Lithics_all.csv")
 lithics$Participant <- as.numeric(as.factor(lithics$Participant))
 
+
+
 ```
 
 ```{r SOM table 1}
+CE  <- read.csv("Data/CE_cutting_edges.csv")
+
+edge_break_down <- CE %>%
+  group_by(Type) %>%
+  summarise(Median_Mass = median(Mass, na.rm = TRUE),
+            Median_Cutting_Edge_Length = median(cutting_edge))
+
+write.csv(edge_break_down, "Tables/SOM_T1_Cutting_edge_length.csv")
+```
+
+```{r SOM table 2}
 
 particip_rm <- lithics %>% 
   group_by(Participant, Raw_Material) %>%
   summarise(N = n())
 
-write.csv(particip_rm, "Tables/SOM_T1_RM_Particip.csv")
+write.csv(particip_rm, "Tables/SOM_T2_RM_Particip.csv")
 
 ```
 
-```{r}
+```{r SOM table 3}
 
 particip_break_down <- lithics %>% 
   group_by(Participant, Context) %>%
   summarise(N = n())
 
-write.csv(particip_break_down, "Tables/SOM_T2_Selection_Particip.csv")
+write.csv(particip_break_down, "Tables/SOM_T3_Selection_Particip.csv")
+
 
 ```
 
 
-```{r}
-stage_break_down <- lithics %>% group_by(Context) %>%
-  summarise(med = median(Mass, na.rm = TRUE))
-```
+
+
+
 
 
 
