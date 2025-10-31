@@ -1,25 +1,16 @@
-# Disclaimer
-
-THIS PAPER IS CURRENTLY UNDER REVIEW. IF YOU WISH TO CITE THIS WORK OR USE THIS CODE PLEASE CITE THE ASSOCIATED PREPRINT. IT CAN BE FOUND AT THE FOLLOWING LINK https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4850287
-
 # Read Me
 
-This is the repository for the code accompanying the analysis published in the paper entitled "XXXXXXX". Please follow this link to download a copy of this paper. If you cannot gain access to the paper via the link, feel free to write me directly and I will do my best to respond to you.
+This is the repository for the code and data accompanying the analysis published in the paper entitled, "Modern stone tool users from Northern Kenya emphasize mass and edge length in the selection of cutting tools", published in the Proceedings of the Royal Society B
 
-# Analysis Files
+## Using this code
+The repository is comprised of a series of interconnected files and folders. So it is best to keep the files and folders in their original places for ease of reproducibility. As long as the file structure is maintained, you should be able to open and run any of the analysis files (see below) without issue. Just make sure that you have installed all of the necessary packages defined at the beginning of each Rmd file. 
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-The code makes use of the rethinking package. If you do not have the rethinking package installed, visit the rethinking page for installation instructions. 
-=======
-The code makes use of the rethinking package to implement all of the Bayesian analysis. Installing this package is more involved than simply using the "install.packages" function in R.  Visit the [Rethinking GitHub page](https://github.com/rmcelreath/rethinking) for instructions on how to install this package. 
->>>>>>> Stashed changes
-=======
-The code makes use of the rethinking package to implement all of the Bayesian analysis. Installing this package is more involved than simply using the "install.packages" function in R.  Visit the [Rethinking GitHub page](https://github.com/rmcelreath/rethinking) for instructions on how to install this package. 
->>>>>>> Stashed changes
+The code makes use of the rethinking package to implement all of the Bayesian analysis. Installing this package is more involved than simply using the "install.packages" function in R. Visit the [Rethinking GitHub page](https://github.com/rmcelreath/rethinking) for specific installation instructions. 
 
-There are  Here you will find 4 Rmarkdown files. CE_Participant_level_Model.Rmd and Cutting_Edge_Global_Model.Rmd define the bayesian ordinal models published in the paper. They are also accomonpanied by the diagnostics provided by the "Rethinking" package that can be used to assessed the quality of the model. The "Models" folder also contains as a copy to the model results that can be used to generate the figures in the "CE_Figures.Rmd" document. The CE_Figures.Rmd provides the code that allows you to repoduce the every figure except for figure 1. Figure 1 is a compilation of photos. CE_Tables.rmd provides the code for the tables.
+## Analysis Files
 
-# Feedback, bugs, issues
+There are  4 R Markdown files. CE_Participant_level_Model.Rmd and Cutting_Edge_Global_Model.Rmd defines the Bayesian ordinal models published in the paper. They are also accompanied by the diagnostics provided by the "Rethinking" package that can be used to assess the quality of the model. The "Models" folder also contains a copy of the model results that can be used to generate the figures in the "CE_Figures.Rmd" document. The CE_Figures.Rmd provides the code that allows you to reproduce every figure except for Figure 1. Figure 1 is a compilation of photos. CE_Tables.rmd provides the code for the tables.
+
+## Feedback, bugs, issues
 
 Please don't hesitate to contact me with any issues you might encounter.
