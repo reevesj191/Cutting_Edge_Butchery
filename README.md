@@ -9,7 +9,11 @@ This is the repository for the code accompanying the analysis published in the p
 # Analysis Files
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 The code makes use of the rethinking package. If you do not have the rethinking package installed, visit the rethinking page for installation instructions. 
+=======
+The code makes use of the rethinking package to implement all of the Bayesian analysis. Installing this package is more involved than simply using the "install.packages" function in R.  Visit the [Rethinking GitHub page](https://github.com/rmcelreath/rethinking) for instructions on how to install this package. 
+>>>>>>> Stashed changes
 =======
 The code makes use of the rethinking package to implement all of the Bayesian analysis. Installing this package is more involved than simply using the "install.packages" function in R.  Visit the [Rethinking GitHub page](https://github.com/rmcelreath/rethinking) for instructions on how to install this package. 
 >>>>>>> Stashed changes
