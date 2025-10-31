@@ -8,14 +8,12 @@ bibliography: skeleton.bib
 link-citations: yes
 ---
 
+# Load Packages
 ```{r setup, include=FALSE}
-library(tint)
 library(dplyr)
-# invalidate cache when the package version changes
-knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'))
-options(htmltools.dir.version = FALSE)
 ```
 
+# Load Data 
 ```{r}
 
 lithics <- read.csv("Data/CE_Lithics_all.csv")
@@ -25,6 +23,7 @@ lithics$Participant <- as.numeric(as.factor(lithics$Participant))
 
 ```
 
+# SOM Table 1: Summary of the mass and cutting edge length according to technological type
 ```{r SOM table 1}
 CE  <- read.csv("Data/CE_cutting_edges.csv")
 
@@ -36,8 +35,15 @@ edge_break_down <- CE %>%
 write.csv(edge_break_down, "Tables/SOM_T1_Cutting_edge_length.csv")
 ```
 
+# SOM Table 2: Number of lithics produced according to participant and raw material
+
+The totals and breakdown by materials are compiled into a table in the SI document. 
 ```{r SOM table 2}
 
+particip_totals <- lithics %>% 
+  group_by(Participant) %>%
+  summarise(N = n())
+  
 particip_rm <- lithics %>% 
   group_by(Participant, Raw_Material) %>%
   summarise(N = n())
