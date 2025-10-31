@@ -1,19 +1,13 @@
 ---
-title: "SOM Modern stone tool users provide insight into selection criteria of cutting tools"
+title: "SOM Modern stone tool users from Northern Kenya emphasize mass and edge length in the selection of cutting tools"
 subtitle: "Global Model"
 author: "Jonathan S. Reeves"
 date: "`r Sys.Date()`"
-output: tint::tintPdf
-bibliography: skeleton.bib
-link-citations: yes
 ---
 
 ```{r setup, include=FALSE}
 library(tint)
 library(rethinking)
-# invalidate cache when the package version changes
-knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'))
-options(htmltools.dir.version = FALSE)
 ```
 
 # Load Data

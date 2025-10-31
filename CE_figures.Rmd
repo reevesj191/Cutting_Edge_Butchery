@@ -1,6 +1,6 @@
 ---
-title: "SOM Modern stone tool users provide insight into selection criteria of cutting tools"
-subtitle:"Figures"
+title: "Modern stone tool users from Northern Kenya emphasize mass and edge length in the selection of cutting tools"
+subtitle: "Main text figures"
 author: "Jonathan S. Reeves"
 date: "`r Sys.Date()`"
 ---
