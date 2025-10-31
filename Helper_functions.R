@@ -1,6 +1,7 @@
 ################################################################################
 # Title: Analysis and Visualization Functions associated with the paper entitled:
-# Modern stone tool users provide insight into selection criteria of cutting tools
+# Modern stone tool users from Northern Kenya emphasize mass and edge length in the selection of cutting tools.
+# Published in Proceedings of the Royal Society B
 # Author: Jonathan S. Reeves
 # Last Update: 26.4.2024
 ################################################################################
