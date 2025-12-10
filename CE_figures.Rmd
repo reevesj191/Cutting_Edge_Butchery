@@ -24,6 +24,7 @@ source("Helper_functions.R")
 
 lithics <- read.csv("Data/CE_Lithics_all.csv")
 xdata <- read.csv("Data/CE_cutting_edges_2.csv")
+
 global_model <- readRDS("Models/CE_Global_Model_4.RDS")
 nsamples = 15000
 ```
