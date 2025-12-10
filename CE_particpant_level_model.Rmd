@@ -13,7 +13,7 @@ library(rethinking)
 # Load Data
 
 ```{r}
-xdata <- read.csv("Data/CE_cutting_edges.csv")
+xdata <- read.csv("Data/CE_cutting_edges_2.csv")
 ```
 
 # Define and Standardize Variables
@@ -27,7 +27,7 @@ dat <- list(
   M = xdata$Mass^(1/3),
   Th = xdata$Max_Thick, # Maximum thickness
   EL = xdata$cutting_edge, # Edge length
-  EA = xdata$mean_angle, # Average edge angles
+  EA = xdata$mean_angle_deg, # Average edge angles
   C = xdata$Per_Cortex,
   P = as.numeric(as.factor(xdata$Participant))
 )
@@ -54,7 +54,7 @@ ceM2 <- ulam(
       sigma ~ exponential(1),
     
     cutpoints ~ dnorm(0, 1.5)
-  ), data= dat, chains = 4, cores =4, iter = 2000,
+  ), data= dat, chains = 4, cores =4, iter = 10000,
   )
 
 
@@ -87,7 +87,7 @@ rethinking::traceplot(ceM2)
 # Write Model
 
 ```{r write model}
-saveRDS(ceM2, file = "Models/CE_Participant_Model.RDS")
+saveRDS(ceM2, file = "Models/CE_Participant_Model_4.RDS")
 ```
 
 

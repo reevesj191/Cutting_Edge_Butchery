@@ -23,9 +23,9 @@ source("Helper_functions.R")
 ```{r load data}
 
 lithics <- read.csv("Data/CE_Lithics_all.csv")
-xdata <- read.csv("Data/CE_cutting_edges.csv")
-global_model <- readRDS("Models/CE_Global_Model.RDS")
-
+xdata <- read.csv("Data/CE_cutting_edges_2.csv")
+global_model <- readRDS("Models/CE_Global_Model_4.RDS")
+nsamples = 15000
 ```
 
 # Main Text Figures
@@ -155,7 +155,7 @@ f4
 ## Figure 5
 
 ```{r fig Cutting Edge Length, echo = FALSE, fig.width=13}
-
+n_samples = 15000
 min_val <- min(xdata$cutting_edge)
 max_val <- max(xdata$cutting_edge)
 
@@ -190,7 +190,7 @@ for(i in 1:length(var_quant)){
 p <- ggPostPredPlot_pordlogit(model = global_model,
                        sim = sim_dat,
                        var = sim_dat$EL, 
-                       n_samples = 2000,
+                       n_samples = n_samples,
                        opac = .3)$sum_plot
  p <- p + 
    scale_x_continuous(expand=c(0,0)) +
@@ -220,7 +220,7 @@ ggsave("Figures/CE_fig_5.png", plot = f5, width = 10, height = 4, units = "in")
 **Figure 6**
 
 ```{r fig  Cortex, echo = FALSE}
-nsamples <- 2000
+nsamples <- 15000
 min_val <- min(0)
 max_val <- max(1)
 
@@ -244,9 +244,12 @@ sim_dat <- data.frame(M=kM,
                        sim = sim_dat,
                        var = sim_dat$C, 
                        n_samples = nsamples,
-                       opac = .3)$sum_plot
+                       opac = .3)$sum_plot +
+   scale_x_continuous(expand=c(0,0)) +
+   scale_y_continuous(expand=c(0,0))
+ 
  c_plot <- p + 
-   labs(title = "Cortex",
+   labs(title = "a. Cortex",
           x = "% Cortex",
           y = "Cumulative Proportion",
         fill = "Selection stage") + 
@@ -258,7 +261,7 @@ c_plot
 
 
 ```{r fig  Thickness, echo = FALSE}
-nsamples = 2000
+nsamples = 15000
 min_val <- min(xdata$Max_Thick)
 max_val <- max(xdata$Max_Thick)
 
@@ -282,9 +285,12 @@ sim_dat <- data.frame(M=kM,
                        sim = sim_dat,
                        var = sim_dat$Th, 
                        n_samples = nsamples,
-                       opac = .3)$sum_plot
+                       opac = .3)$sum_plot + 
+      scale_x_continuous(expand=c(0,0)) +
+      scale_y_continuous(expand=c(0,0))
+ 
  thick_plot <- p + 
-   labs(title = "Thickness",
+   labs(title = "b. Thickness",
           x = "Thickness (cm)",
           y = "",
         fill = "Selection stage") + 
@@ -297,8 +303,9 @@ thick_plot
 
 ```{r fig  Edge Angle, echo = FALSE}
 
-min_val <- min(xdata$mean_angle)
-max_val <- max(xdata$mean_angle)
+min_val <- min(xdata$mean_angle_deg)
+max_val <- max(xdata$mean_angle_deg[xdata$mean_angle_deg < 35])
+
 
 xvar <- seq(min_val, 
           max_val, 
@@ -320,9 +327,11 @@ sim_dat <- data.frame(M=kM,
                        sim = sim_dat,
                        var = sim_dat$EA, 
                        n_samples = nsamples,
-                       opac = .3)$sum_plot
+                       opac = .3)$sum_plot + 
+      scale_x_continuous(expand=c(0,0)) +
+      scale_y_continuous(expand=c(0,0))
  edge_plot <- p + 
-   labs(title = "Edge Angle",
+   labs(title = "c. Edge Angle",
           x = "Edge Angle (degrees)",
           y = "",
         fill = "Selection stage") + 
@@ -373,7 +382,8 @@ SOM_f1
 ## Individal Model Effects
 
 ```{r read_model}
-indv.model <- readRDS("Models/CE_Participant_Model.RDS")
+indv.model <- readRDS("Models/CE_Participant_Model_4.RDS")
+n_samples = 4000
 ```
 
 ```{r fig Indiv.Mass, echo = FALSE}
@@ -411,7 +421,7 @@ for(id in Pid){
     p <- ggPostPredPlot_pordlogit(model = indv.model,
                        sim = sim_dat,
                        var = sim_dat$EL, 
-                       n_samples = 200,
+                       n_samples = n_samples,
                        cols = cols,
                        opac = .3)$sum_plot
     p <- p + 
@@ -439,7 +449,6 @@ for(i in 1:8){
 
 ```{r fig Indiv.cortex, echo = FALSE}
 
-nsamples <- 2000
 min_val <- min(0)
 max_val <- max(1)
 
@@ -469,7 +478,7 @@ for(id in Pid){
     p <- ggPostPredPlot_pordlogit(model = indv.model,
                        sim = sim_dat,
                        var = sim_dat$C, 
-                       n_samples = 50,
+                       n_samples = n_samples,
                        cols = cols,
                        opac = .3)$sum_plot
     p <- p + 
@@ -525,7 +534,7 @@ for(id in Pid){
     p <- ggPostPredPlot_pordlogit(model = indv.model,
                        sim = sim_dat,
                        var = sim_dat$Th, 
-                       n_samples = 50,
+                       n_samples = n_samples,
                        cols = cols,
                        opac = .3)$sum_plot
     p <- p + 
@@ -540,7 +549,7 @@ for(id in Pid){
 
 
 plot <- ggarrange(plotlist = plots, common.legend = TRUE)
-ggsave(filename = "/Figures/SOM_Thickness_indv.png", 
+ggsave(filename = "Figures/SOM_Thickness_indv.png", 
        plot = plot,
        width = 10,
        height = 11, 
@@ -554,7 +563,7 @@ ggsave(filename = "/Figures/SOM_Thickness_indv.png",
 ```{r fig Edge_angle, echo = FALSE}
 
 min_val <- min(xdata$mean_angle)
-max_val <- max(xdata$mean_angle)
+max_val <- max_val <- max(xdata$mean_angle_deg[xdata$mean_angle_deg < 35])
 
 xvar <- seq(min_val, 
           max_val, 
@@ -583,7 +592,7 @@ for(id in Pid){
     p <- ggPostPredPlot_pordlogit(model = indv.model,
                        sim = sim_dat,
                        var = sim_dat$EA, 
-                       n_samples = 50,
+                       n_samples = n_samples,
                        cols = cols,
                        opac = .3)$sum_plot
     p <- p + 

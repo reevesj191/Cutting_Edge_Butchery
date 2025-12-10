@@ -13,7 +13,7 @@ library(rethinking)
 # Load Data
 
 ```{r}
-xdata <- read.csv("Data/CE_cutting_edges.csv")
+xdata <- read.csv("Data/CE_cutting_edges_2.csv")
 ```
 
 # Define and Standardize Variables
@@ -27,7 +27,7 @@ dat <- list(
   M = xdata$Mass^(1/3),
   Th = xdata$Max_Thick, # Maximum thickness
   EL = xdata$cutting_edge, # Edge length
-  EA = xdata$mean_angle, # Average edge angles
+  EA = xdata$mean_angle_deg, # Average edge angles
   C = xdata$Per_Cortex
 )
 
@@ -49,7 +49,7 @@ ceM1 <- ulam(
     #priors for the priors
     
     cutpoints ~ dnorm(0, 1.5)
-  ), data= dat, chains = 4, cores =4, iter = 2000, cmdstan = TRUE
+  ), data= dat, chains = 4, cores =4, iter = 10000, cmdstan = TRUE
   )
 
 ```
@@ -72,14 +72,14 @@ plot(ceM1.marg)
 
 ```{r ceM2.Trace plots}
 
-rethinking::trankplot(ceM1)
+rethinking::traceplot(ceM1)
 
 ```
 
 # Write Model
 
 ```{r write model}
-saveRDS(ceM1, file = "CE_Global_Model_2.RDS")
+saveRDS(ceM1, file = "Models/CE_Global_Model_4.RDS")
 ```
 
 

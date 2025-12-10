@@ -9,7 +9,7 @@ The code makes use of the rethinking package to implement all of the Bayesian an
 
 ## Analysis Files
 
-There are  4 R Markdown files. CE_Participant_level_Model.Rmd and Cutting_Edge_Global_Model.Rmd defines the Bayesian ordinal models published in the paper. They are also accompanied by the diagnostics provided by the "Rethinking" package that can be used to assess the quality of the model. The "Models" folder also contains a copy of the model results that can be used to generate the figures in the "CE_Figures.Rmd" document. The CE_Figures.Rmd provides the code that allows you to reproduce every figure except for Figure 1. Figure 1 is a compilation of photos. CE_Tables.rmd provides the code for the tables.
+There are 4 R Markdown files. CE_Participant_level_Model.Rmd and Cutting_Edge_Global_Model.Rmd defines the Bayesian ordinal models published in the paper. They are also accompanied by the diagnostics provided by the "Rethinking" package that can be used to assess the quality of the model. The "Models" folder also contains a copy of the model results that can be used to generate the figures in the "CE_Figures.Rmd" document. The CE_Figures.Rmd provides the code that allows you to reproduce every figure except for Figure 1. Figure 1 is a compilation of photos. CE_Tables.rmd provides the code for the tables.
 
 ## Feedback, bugs, issues
 

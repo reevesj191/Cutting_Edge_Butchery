@@ -9,23 +9,6 @@ require(rethinking)
 require(ggplot2)
 require(dplyr)
 
-PostPredPlot_pordlogit <- function(model, sim, var){
-  
-  phi <- link(model, data = sim)
-  post <- extract.samples(model)
-  
-  for(s in 1:50){
-    
-    pk <- pordlogit(1:3,
-                    phi[s,],
-                    post$cutpoints[s,])
-    
-    for(i in 1:3){
-      lines(var, pk[,i], col = col.alpha(cols[i],.3))
-    }
-  }
-}
-
 
 
 ggPostPredPlot_pordlogit <- function(model,
@@ -100,13 +83,13 @@ ggPostPredPlot_pordlogit <- function(model,
     
     #Upper 89%
     
-    geom_line(aes(y = V1_U_95), color = "white", size =.75, linetype = "dashed")+
-    geom_line(aes(y = V2_U_95), color = "white", size =.75, linetype = "dashed")+
-    geom_line(aes(y = V3_U_95), color = "white", size =.75, linetype = "dashed")+
+    geom_line(aes(y = V1_U_95), color = "white", size =.5, linetype = "dashed")+
+    geom_line(aes(y = V2_U_95), color = "white", size =.5, linetype = "dashed")+
+    geom_line(aes(y = V3_U_95), color = "white", size =.5, linetype = "dashed")+
     #Lower 89%
-    geom_line(aes(y = V1_L_95), color = "white", size =.75, linetype = "dashed")+
-    geom_line(aes(y = V2_L_95), color = "white", size =.75, linetype = "dashed")+
-    geom_line(aes(y = V3_L_95), color = "white", size =.75, linetype = "dashed")+
+    geom_line(aes(y = V1_L_95), color = "white", size =.5, linetype = "dashed")+
+    geom_line(aes(y = V2_L_95), color = "white", size =.5, linetype = "dashed")+
+    geom_line(aes(y = V3_L_95), color = "white", size =.5, linetype = "dashed")+
     scale_y_continuous(limits = c(0,1))+
     theme_bw()
   
